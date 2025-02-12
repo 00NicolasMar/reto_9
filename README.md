@@ -91,7 +91,7 @@ arr = [64, 34, 25, 12, 22, 11, 90]
 bubbleSort(arr)
 print("Lista ordenada:", arr)
 ```
-##**Complejidad**
+## **Complejidad**
 
 | Caso | Complejidad |
 |------|------------|
