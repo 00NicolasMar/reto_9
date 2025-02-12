@@ -56,10 +56,49 @@ Distribuye los valores en cubetas, los ordena individualmente y los junta.
 Muy eficiente para distribuciones uniformes.
 
 ## ¿Cual usar?
-Para pocos elementos → `Insertion Sort` o `Bubble Sort`
-Para grandes volúmenes de datos → `Merge Sort` o `Quick Sort`
+- Para pocos elementos → `Insertion Sort` o `Bubble Sort`
+  
+- Para grandes volúmenes de datos → `Merge Sort` o `Quick Sort`
+  
 Si los valores tienen un rango pequeño → `Counting Sort` o `Radix Sort`
 
 ## **Concepto de Bubble Sort**
 
 Bubble Sort es un algoritmo de ordenamiento basado en comparaciones que funciona intercambiando elementos adyacentes si están en el orden incorrecto. Este proceso se repite hasta que la lista está completamente ordenada.
+
+## Funciones y utilidad
+
+- Bubble Sort compara e intercambia elementos adyacentes hasta que la lista está ordenada.
+  
+- Cada iteración coloca el mayor elemento al final.
+  
+- Tiene una complejidad O(n²), lo que lo hace ineficiente para listas grandes.
+  
+- Se puede optimizar con una bandera (swapped) para detener el algoritmo si la lista ya está ordenada.
+  
+## Codigo de python (uso)
+
+```python
+def bubbleSort(arr):
+    n = len(arr)
+    for i in range(n): 
+        for j in range(0, n - i - 1):  # Comparaciones dentro del recorrido
+            if arr[j] > arr[j + 1]:  # Si están en orden incorrecto, intercambian
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+# Ejemplo de uso
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubbleSort(arr)
+print("Lista ordenada:", arr)
+```
+##**Complejidad**
+
+| Caso | Complejidad |
+|------|------------|
+| **Peor caso (lista invertida)** | \(O(n^2)\) |
+| **Mejor caso (lista ya ordenada)** | \(O(n)\) |
+| **Caso promedio** | \(O(n^2)\) |
+
+## Referencias
+Pagina web: (Geeksforgeeks) 
+- link: https://www.geeksforgeeks.org/bubble-sort-algorithm/ **Bubble Sort Algorithm** 
