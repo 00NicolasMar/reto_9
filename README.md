@@ -5,7 +5,7 @@ Los algoritmos de sorting (ordenamiento) son métodos que organizan los elemento
 ### Algoritmos de Ordenamiento Básicos (O(n²))
 #### Son sencillos de entender e implementar, pero no son eficientes para grandes volúmenes de datos.
 
-##### Bubble Sort (Ordenamiento de burbuja) 🫧
+##### Bubble Sort (Ordenamiento de burbuja)
 
 Compara elementos adyacentes y los intercambia si están en el orden incorrecto.
 Tiempo de ejecución: O(n²) en el peor caso.
